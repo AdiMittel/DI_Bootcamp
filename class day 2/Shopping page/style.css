@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(194, 146, 194);
+}
+.row1{
+    padding: 0px;
+    background-color: rgb(172, 182, 156);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+}
+.item4{
+    size: 10vh;
+}

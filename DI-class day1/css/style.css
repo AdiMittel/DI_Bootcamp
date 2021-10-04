@@ -1,0 +1,46 @@
+*{
+    background-color: rgb(228, 169, 169);
+    text-align: center;
+}
+.media h1{
+    text-align: center;
+}
+.media img{
+    height: 300px;
+    width: 300px;
+    /* padding-left: 100px; */
+    /* text-align: center; */
+    
+}
+.list{
+    display:inline-block;
+}
+li{
+    text-align: left;
+}
+.span {
+    margin-bottom: 200px;
+    color: red;
+    border: red solid 2px;
+    text-align: center;
+    
+}
+table{
+    margin-top: 10px;
+}
+table tr th{
+    margin: 100px;
+    border: solid;
+    border-collapse: collapse;
+}
+.lion img{
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+}
+.info span{
+    background-color: yellow;
+}
+img{
+    border: orange solid 3px;
+}
