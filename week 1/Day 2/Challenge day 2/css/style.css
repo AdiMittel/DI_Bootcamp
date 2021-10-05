@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding:0;
+    
+    
+}
+.character{
+    background-image: url("https://cdn.pixabay.com/photo/2019/05/25/12/30/iron-man-4228269__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    position: relative;
+    bottom: 0;
+    height: 100vh;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    overflow: hidden;
+
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.945);
+    background-size:auto;
+    background-repeat: no-repeat;
+    display:inline-flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    height : 10vw;
+    width: 120%;
+    color: blanchedalmond;
+    list-style-type: none;
+    text-align: center;
+
+    
+}
+ul{
+    position: relative;
+    left: 20%;
+    bottom: 3vh;
+}
+li {
+    list-style: none;
+    text-decoration: none;
+    float: right;
+    padding: 4vw;
+}
+.navbar a{
+      color: rgba(126, 99, 190, 0.61);
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      font-size :4vw ;
+}
+
+.character p{
+    position: relative;
+    top: 37vh;
+    left: 0;
+    color: rgb(151, 12, 12);
+}
+.character h1{
+    position: absolute;
+    top: 25vh;
+    color: goldenrod;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 3px;
+    position: relative;
+    bottom: 2vh;
+    color: mistyrose;
+}
