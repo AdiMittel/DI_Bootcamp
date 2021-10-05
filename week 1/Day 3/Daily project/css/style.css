@@ -20,11 +20,14 @@ body{
 #leftt{
     display: grid;
     justify-items: start;
+    grid-gap: 0;
+    align-content: center;
     
 }
 #rightt{
     display: grid;
     justify-items: end;
+    align-content: center;
 }
 #midd{
     display: flex;
