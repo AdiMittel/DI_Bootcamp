@@ -1,0 +1,37 @@
+body{
+    background-color: tomato;
+    
+}
+.all{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.all .left,.right,.mid{
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    margin: 1vw;
+    border: 2px black solid;
+    display: flex;
+    
+
+}
+#leftt{
+    display: grid;
+    justify-items: start;
+    
+}
+#rightt{
+    display: grid;
+    justify-items: end;
+}
+#midd{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.mid{
+    margin-right:5vw ;
+    margin-left:5vw ;
+}
