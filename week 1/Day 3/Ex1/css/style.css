@@ -1,9 +1,76 @@
 body{
-    background-color: bisque
+    background-color: bisque;
+    margin: 6vw;
+    margin-bottom: 3vh;
 }
 .head{
-    background-color:rgb(228, 209, 209);
+    
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80vw;
+    
+    margin-bottom: 4vh;
+    justify-content: center;
+    
 }
+h1{
+    width: 10vw;
+    color: rgb(45, 54, 63);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+span{
+    font-size: 40px;
+}
+.head .pic{
+    position: relative;
+    height: 10vh;
+    width: 10vw;
+}
+
 .pic{
-    background-image: ;
+    display: grid;
+    position: relative;
+    justify-self: end;
+    
+}
+
+.cont{
+    border-top: 1px gray solid;
+    display: flex
+    
+    
+}
+.cont div{
+    padding-bottom: 3vh;
+}
+.right{
+    padding: 10px;
+    margin-left: 10px;
+    border-left: 4px white solid;
+    grid-column: 1fr;
+}
+.contact a{
+    text-decoration:none;
+    color:rgb(129, 117, 158) ;
+    font-size: 12px ;
+}
+.bottom{
+    bottom: 2vh;
+}
+.bottom footer{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+h2,h3,h4{
+    color: rgb(45, 54, 63);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    color: rgb(129, 117, 158);
+}
+i{
+    margin-right: 3px;
+    color: red;
 }
