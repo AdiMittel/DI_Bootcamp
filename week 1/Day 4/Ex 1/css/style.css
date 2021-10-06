@@ -1,0 +1,19 @@
+*{
+    overflow: hidden;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    display: grid;
+    width: 33.3vw;
+    height: 35vh;
+    border: hidden;
+
+    
+}
+span{
+    background-color: blue;
+    margin-left:1vw;
+}

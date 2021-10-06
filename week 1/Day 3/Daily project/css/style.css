@@ -20,7 +20,6 @@ body{
 #leftt{
     display: grid;
     justify-items: start;
-    grid-gap: 0;
     align-content: center;
     
 }
@@ -33,8 +32,12 @@ body{
     display: flex;
     align-items: center;
     justify-self: center;
+    
 }
 .mid{
+    display: grid;
     margin-right:5vw ;
     margin-left:5vw ;
+    justify-content: space-evenly;
+    grid-gap: 5vw;
 }
