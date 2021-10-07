@@ -1,0 +1,111 @@
+.container-fluid{
+    padding: 0;
+    
+}
+.insite{
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 3fr;
+}
+.intro{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.btn-warning{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.aboutsec{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 50vh;
+    background-color: rgb(241, 142, 50);
+  
+}
+   
+.self-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.self-img img{
+    width: 59%;
+    height: 78%;
+    border: outset  5px;
+    
+}
+.info {
+    border-right: 2px black solid;
+}
+
+.port{
+    border-top: black 3px double ;
+    border-bottom: 5px double;
+    background-color:  rgba(197, 193, 176, 0.459);;
+}
+
+.port a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.mb-3{
+    justify-content: center;
+    
+}
+.footer{
+    border-top: black 1px solid;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(197, 193, 176, 0.459);
+}
+
+.master-container{
+    background-color: rgb(241, 142, 50) ;
+}
+
+.fal{
+    background-color: white;
+}
+
+.btn-warning:hover,.btn-primary:hover{
+    width: 20%;
+}
+#continue{
+    text-decoration: none;
+    display: flex;
+}
+.col{
+    min-width: 200px;
+}
+@media all and (max-width: 768px) {
+     .self-img{
+         display: none;
+         height: auto;
+     }
+     .aboutsec{
+        display: flex;
+        height: 10%;
+        background-color: rgb(241, 142, 50);
+     }
+     .info{
+        border-right:none;
+     }
+     .col{
+         padding: 5%;
+         width: auto;
+         height: auto;
+     }
+     .intro a {
+         justify-content: center;
+     }
+
+ }
