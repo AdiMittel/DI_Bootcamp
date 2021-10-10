@@ -36,7 +36,7 @@ nav ul li{
 }
 
 a{
-    padding: 20px;
+    padding: 3vw;
     color: rgb(129, 148, 24);
     text-decoration: none;
 }
@@ -57,6 +57,7 @@ p{
     height: 100%;
 }
 
+
 .logo{
     height:20vh; ;
 
@@ -68,12 +69,16 @@ p{
 }
 .row1 div,.row2 div{
     display: inline-block;
-    border: 0.1em solid;
+    text-align: center;
     height: 400px;
     width: 200px;
-
-
+    margin: 5vw;
 }
+
+.prod{
+    font-size: 120%;
+}
+
 .row1 div:hover,.row2 div:hover{
     border: 0.2em solid;
 }
@@ -91,10 +96,10 @@ section{
     position: relative;
     top: 40vh;
 }
-section div{
+/* section div{
     margin-left: 5vw;
     margin-right: 5vw;
-}
+} */
 section img:hover{
     size: 100px;
 }

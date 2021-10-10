@@ -1,6 +1,15 @@
+
+
+*{
+    font-family:cursive ;
+}
+
 .container-fluid{
     padding: 0;
     
+}
+.navig{
+    position: sticky;
 }
 .insite{
     background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537__340.jpg);
