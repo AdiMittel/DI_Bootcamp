@@ -96,7 +96,10 @@ section{
     position: relative;
     top: 40vh;
 }
-
+/* section div{
+    margin-left: 5vw;
+    margin-right: 5vw;
+} */
 section img:hover{
     size: 100px;
 }

@@ -3,6 +3,7 @@
 // Create a variable called sentence. The value of the variable should be a string that contains the words “not” and “bad”. For example, “The movie is not that bad, I like it”.
 
 let sentence = 'The movie is not that bad, I like it'
+console.log('first sentence is:',sentence);
 
 // Create a variable called wordNot where it’s value is the first appearance of the substring “not” (from the sentence variable).
 
@@ -16,7 +17,7 @@ let wordBad = sentence.indexOf('bad')
 console.log(wordNot,wordBad);
 if (wordNot < wordBad){
     sentence=sentence.replace('not that bad', 'good')
-    console.log(sentence);
+    console.log('New sentence is:',sentence);
 }else{
     console.log(sentence);
 }

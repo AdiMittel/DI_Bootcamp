@@ -10,4 +10,7 @@
 //Exercise 3
 
 let nums =prompt('Enter 2 numbers seperated by , :')
+nums.replace(',' , ' ')
+let result = parseInt(nums)
+console.log(nums);
 
