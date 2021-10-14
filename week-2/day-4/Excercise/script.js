@@ -7,12 +7,12 @@
 
 // infoAboutMe()
 
- function infoAboutMe() {
-     let name = 'Adi'
-     let age = 22
-     let hobbie = 'surfing'
-     console.log(`my name is ${name} im ${age} years old and i like ${hobbie} on my free time`);
- }
+function infoAboutMe() {
+    let name = 'Adi'
+    let age = 22
+    let hobbie = 'surfing'
+    console.log(`my name is ${name} im ${age} years old and i like ${hobbie} on my free time`);
+}
 
 //------------------------------------------------------------------
 // II
@@ -27,8 +27,8 @@
 // infoAboutPerson("Josh", 12, "yellow")
 
 
-function infoAboutPerson(personName, personAge, personFavoriteColor){
-    console.log( `You name is ${personName}, you are ${personAge} years old, your favorite color is ${personFavoriteColor}`);
+function infoAboutPerson(personName, personAge, personFavoriteColor) {
+    console.log(`You name is ${personName}, you are ${personAge} years old, your favorite color is ${personFavoriteColor}`);
 }
 
 //----------------------------------------------------------------------
@@ -41,7 +41,7 @@ function infoAboutPerson(personName, personAge, personFavoriteColor){
 // infoAboutPerson("David", 45, "blue", ["tennis", "painting"])
 // infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", "playing cards"])
 
-function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbies){
+function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbies) {
     console.log(`You name is ${personName}, you are ${personAge}. years old, your favorite color is ${personFavoriteColor}`);
     console.log('Hobbies:');
     for (let i = 0; i < personHobbies.length; i++) {
@@ -66,14 +66,14 @@ function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbi
 
 // checkDriverAge()
 
-function checkDriverAge(){
-    if(driverAge > 18){
+function checkDriverAge() {
+    if (driverAge > 18) {
         console.log('You are old enough to drive, Powering On.Enjoy the ride!');
     }
-    else if(driverAge === 18){
+    else if (driverAge === 18) {
         console.log('Congratulation! this is your first year of driving!');
     }
-    else{
+    else {
         console.log('Sorry, you are too young to drive this car.Powering off');
     }
 }
@@ -82,14 +82,14 @@ function checkDriverAge(){
 // checkDriverAge2(18)
 // checkDriverAge2(24)
 
-function checkDriverAge2(age){
-    if(age> 18){
+function checkDriverAge2(age) {
+    if (age > 18) {
         console.log('You are old enough to drive, Powering On.Enjoy the ride!');
     }
-    else if(age === 18){
+    else if (age === 18) {
         console.log('Congratulation! this is your first year of driving!');
     }
-    else{
+    else {
         console.log('Sorry, you are too young to drive this car.Powering off');
     }
 }
@@ -107,9 +107,9 @@ function checkDriverAge2(age){
 
 function checkNumber() {
     for (let i = 0; i <= 100; i++) {
-        if(i%2 === 0){
+        if (i % 2 === 0) {
             console.log(`${i} is an even number`);
-        }else{
+        } else {
             console.log(`${i} is an odd number`);
         }
 
@@ -121,28 +121,28 @@ function checkNumber() {
 // let res = isDivisble()
 // console.log('Sum is:',res);
 
-function isDivisble(){
+function isDivisble() {
     let sum = 0
     for (let i = 0; i < 500; i++) {
-        if (i%23===0){
+        if (i % 23 === 0) {
             console.log(`${i} is divided by 23!`);
-            sum+=i
+            sum += i
         }
-        
+
     }
     return sum
 }
 // isDivisble2(45)
 // isDivisble2(23)
 
-function isDivisble2(divisor){
+function isDivisble2(divisor) {
     let sum = 0
     for (let i = 0; i < 500; i++) {
-        if (i%divisor===0){
+        if (i % divisor === 0) {
             console.log(`${i} is divided by ${divisor}!`);
-            sum+=i
+            sum += i
         }
-        
+
     }
     console.log(sum);
 }
@@ -161,90 +161,149 @@ let amazonBasket = {
 // checkBasket()
 function checkBasket() {
     let item = prompt('Check if the item you look for is available!')
-    if (item in amazonBasket){
+    if (item in amazonBasket) {
         console.log(`The item you were looking for exists!`);
-    }else{
+    } else {
         console.log('The item you looked for is missing ,maybe next time..');
     }
 }
 //-------------------------------------------------------------------
 //6
-let Quarters  = 0.25
+let Quarters = 0.25
 let Dimes = 0.10
 let Nickels = 0.05
 let Pennies = 0.01
 
-console.log(changeEnough([25, 20, 5, 0], 10.25)); 
-console.log(changeEnough([25, 20, 5, 0], 4.25)); 
-function changeEnough(array, total){
+console.log(changeEnough([25, 20, 5, 0], 10.25));
+console.log(changeEnough([25, 20, 5, 0], 4.25));
+function changeEnough(array, total) {
     let sum = 0
     for (let i = 0; i < array.length; i++) {
-            switch (i) {
-                case 0:
-                    sum+=array[i]*Quarters
-                    break;
-                case 1:
-                    sum+=array[i]*Dimes
-                    break;
-                case 2:
-                    sum+=array[i]*Nickels
-                    break;
-            
-                default:
-                    sum+=array[i]*Pennies
-                    break;
+        switch (i) {
+            case 0:
+                sum += array[i] * Quarters
+                break;
+            case 1:
+                sum += array[i] * Dimes
+                break;
+            case 2:
+                sum += array[i] * Nickels
+                break;
+
+            default:
+                sum += array[i] * Pennies
+                break;
+        }
+    }
+    if (sum >= total) {
+        return true
+    } else {
+        return false
+    }
+
+}
+
+//-------------------------------------------------------------------
+// //7
+let stock = {
+    "banana": 6,
+    "apple": 0,
+    "pear": 12,
+    "orange": 32,
+    "blueberry": 1
+}
+
+let prices = {
+    "banana": 4,
+    "apple": 2,
+    "pear": 1,
+    "orange": 1.5,
+    "blueberry": 10
+}
+
+let shoppingList = ['banana', 'orange', 'apple']
+
+function myBill() {
+    let bill = 0
+    for (let i = 0; i < shoppingList.length; i++) {
+        if (Object.keys(stock).includes(shoppingList[i])) {
+            // console.log(stock[shoppingList[i]])
+            if (stock[shoppingList[i]] !== 0) {
+                for (let j = 0; j < Object.keys.length; j++) {
+                    if (Object.keys(prices).includes(shoppingList[i])) {
+                        bill += prices[shoppingList[i]]
+                        Object.values(stock[shoppingList[i]]) - 1
+                        stock[shoppingList[i]] -= 1
+                    }
+                }
             }
         }
-        if(sum >= total){
-            return true
-        }else{
-            return false
-        }
-        
+    }
+    console.log('The bill is:', bill);
+    console.log(stock);
 }
-    
-//----------------------------
-// //7
+myBill()
+
+//----------------------------------------------------------------------
+//8
 // 1. Tip 20% when the bill is less than $50,
 // 2. Tip 15% when the bill is between $50 and $200,
 // 3. Tip 10% if the bill is more than $200.
 
 // Ask John for the amount of the bill.
 // Create the program explained above.
+// In the end, John would like to know:
+// Tip amount.
+// Final bill (bill + tip).
 
-function tipCalculator(){
-    let tip = 0
-    let bill = +prompt()
-    if (bill < 50) {
-        tip+=bill*0.2
-    }else if(bill > 50 || bill < 200){
-        tip+=bill*0.15
-    }else{
-        tip+= bill*0.1
-    }
-    console.log(`The bill is ${bill},the tip is ${tip}. Total bill is ${bill+tip}`);
-}
 // tipCalculator()
 
-//-----------------------------------------------------------------
-//9
-// Define a function called hotelCost().
-// It should ask the user for the number of nights they would like to stay in
-//  the hotel.
-// If the user doesn’t answer or if the answer is not a number, ask again.
-// The hotel costs $140 per night. The function should return the total price of
-//  the hotel.
-console.log(hotelCost());
-function hotelCost(){
-    let priceForNight = 140
-    let totalPrice = 0
-    let nightsCount = parseFloat(prompt('How many nights would you like to stay?')) 
-    
-    console.log(typeof nightsCount);
-    // while(typeof nightsCount !== typeof 1){
-    //     nightsCount = prompt('How many nights would you like to stay?')
-    // }
-    // totalPrice = nightsCount * priceForNight
-    // return totalPrice
+function tipCalculator() {
+    let bill = +prompt('How much is your bill?')
+    let tip = 0
+    let total = 0
+    if (bill < 50) {
+        tip += bill * 0.20
+        total+=tip+bill
+        console.log(`Your bill is ${bill} so for tip you need to add ${tip} total of ${total}`);
+    }
+    else if(bill > 50 && bill < 200) {
+        tip += bill * 0.15
+        total+=tip+bill
+        console.log(`Your bill is ${bill} so for tip you need to add ${tip} total of ${total}`);
+    }else{
+        tip += bill * 0.1
+        total+=tip+bill
+        console.log(`Your bill is ${bill} so for tip you need to add ${tip} total of ${total}`);
+    }
 }
 
+//------------------------------------------------
+//9
+
+console.log('Price of the hotel is:',hotelCost());
+
+function hotelCost() {
+    let nightsNum = +prompt('How many nights whould you like to stay?')
+    let price = 140
+    console.log(typeof nightsNum,  typeof 1);
+    while (!nightsNum > 0) {
+        nightsNum = +prompt('How many nights whould you like to stay?')
+    }
+    price*=nightsNum
+    return price;
+
+}
+//-------------
+// Define a function called planeRideCost().
+// It should ask the user for their destination.
+// The function should return a different price depending on the location.
+// “London”: 183$
+// “Paris” : 220$
+// All other destination : 300$
+// If the user doesn’t answer or if the answer is not a string, ask again.
+console.log(planeRideCost()); 
+
+function planeRideCost() {
+    
+}

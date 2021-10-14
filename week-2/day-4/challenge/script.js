@@ -1,39 +1,9 @@
-//Logics:
-//
-
-// Prompt the user for several words (separated by commas).
-// Put the words into an array.
-let words = prompt('Enter few words seperated by a comma ","')
-function wordsToArray(str) {
-    str = words.split(',')
-    return str;
-}
-
-let res = wordsToArray(words)
-console.log(res);
-// Console.log the words one per line, in a rectangular frame as seen below.
-let longStr = findLongestStr(res)
-function findLongestStr(array) {
-    let longestStr = 0
-    for (let i = 0; i < array.length; i++) {
-        if(array[i] > longestStr){
-            longestStr = array[i]
-        }
-    }
-    return longestStr
-}
-console.log(longStr);
-
-printFramedWords()
-
-function printFramedWords(str){
-    let row = ''
-    for (let i = 0; i < longStr.length +4; i++) {
-        
-    }
-    console.log(row);
-        
-}
-
-
-// Check out the Hints and Requirements below.
+const input = prompt('Please enter a list of words separated by commas');
+const list = input.split(',').map(e => e.trim());
+let longest = 0;
+list.forEach(e => {
+    if (e.length > longest) longest = e.length;
+})
+console.log('*'.repeat(longest + 4));
+list.forEach(e => console.log(`* ${e}${' '.repeat(longest - e.length)} *`))
+console.log('*'.repeat(longest + 4));
