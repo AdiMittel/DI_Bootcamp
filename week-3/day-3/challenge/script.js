@@ -1,8 +1,10 @@
-let keyValue = document.getElementById('input')
-let invalidKeys = [1,2,3,4,5,6,7,8,9,0]
-let i = 0
-function hideNumbers(event) {
-    return /[a-z]/i.test(event.key)
-}
+let input = document.getElementById('input')
 
-keyValue.addEventListener('keyup',hideNumbers())
+input.addEventListener('input', function () {
+    const found = input.value.match(/[a-zA-Z]/g);
+    if (found !== null) {
+        input.value = found.join('');
+    } else {
+        input.value = input.value.slice(0, -1);
+    }
+});
