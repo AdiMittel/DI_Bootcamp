@@ -41,3 +41,11 @@ function getColor(){
 function changeColor(event) {
     event.target.style.backgroundColor = currColor
 }
+
+function clearBoard() {
+    // newDivs.style.backgroundColor = 'White'
+    let clearDivs = document.querySelectorAll('.plain')
+    for (let i = 0; i < 1440; i++) {
+        clearDivs[i].style.backgroundColor = "white"
+    }
+}
