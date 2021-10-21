@@ -36,6 +36,7 @@ for (let i = 0; i < 1440; i++) {
 let currColor
 function getColor(){
     currColor=this.style.backgroundColor;
+    console.log(currColor);
 }
 
 function changeColor(event) {

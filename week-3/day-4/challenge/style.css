@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#f04400, #e0a7d9); 
+    /* overflow: hidden; */
+}
+.container{
+    width: 35vw;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    transform: translate(-50,-50);
+   text-align: center;
+  
+}
+
+
+.input{
+    width: 40vw;
+    margin-bottom: 3vh;
+    top: 10vh;
+    background-color: white;
+    color: white;
+    text-align: center;    
+}
+
+input {
+    padding: 12px 0;
+    width: 70%;
+    border: none;
+    /* top:1vh;
+    border-radius: 0;
+    width: 20vw;
+    padding: 2vw;
+    float: left;
+    font-size: 16px; */
+  }
+
+.addBtn {
+    width: 20%;
+    padding-left: 4vh;
+    background-color: white;
+    color: rgb(73, 170, 173);
+    border: none;
+
+    /* padding: 2vw;
+    width: 10vw;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;  */
+ }   
+
+ .listTasks{
+     height: 100%;
+     width: 40vw;
+     background-color: white;
+ }
+ ul{
+     padding: 15px;
+ }
+
+ .line{
+     margin-top: 2vh;
+     text-decoration: none;
+     list-style: none;
+     text-align: center;
+     border-bottom: rgb(132, 195, 255) 1px solid;
+     height: 5vh;
+ }
+
+ .box{
+    float: left;
+    width: 5vw;
+ }
+
+
+ 
