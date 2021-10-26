@@ -6,10 +6,11 @@ age = 2021-years
 year_last_num = age % 10 
 
 # print(candle)
-candle = '_' + 'i'*year_last_num + '_'
+candle = '__' + 'i'*year_last_num + '__'
 
 
-cake = f'''{candle}
+cake = f'''
+         {candle}
       |:H:a:p:p:y:|
     __|___________|__
    |^^^^^^^^^^^^^^^^^|

@@ -19,5 +19,5 @@ disney_users_B = dict(zip(num_list,users))
 disney_users_C = {}
 for i in range(len(users),0):
     num_list.append(i)
-disney_users_C = dict(zip(reversed(users),num_list))
+disney_users_C = dict(zip(sorted(users),num_list))
 print(disney_users_C)
