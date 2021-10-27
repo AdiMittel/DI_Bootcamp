@@ -1,0 +1,16 @@
+functions are defined with 'DEF'.
+every function will have 1 purpose that suposed to be re-useable.
+
+def function-name():
+    function body
+    functin body
+out of function
+
+argument: what we define in a function in order to use as a var
+parameter: what the 'user' will provied  us as argument.
+ex:
+def helloUser(name)
+    asdas
+    adasd
+
+helloUser('random name')
