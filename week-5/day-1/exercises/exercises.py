@@ -108,17 +108,15 @@ class Zoo():
 
 
 
+ramat_gan_safari = Zoo('Ramat gan safari')
+ramat_gan_safari.add_animal('Tiger')
+ramat_gan_safari.add_animal('Cow')
+ramat_gan_safari.add_animal('Bear')
+ramat_gan_safari.add_animal('Chicken')
+ramat_gan_safari.add_animal('Buffalo')
+ramat_gan_safari.add_animal('Parrot')
 
-
-zoo = Zoo('My zoo')
-zoo.add_animal('Tiger')
-zoo.add_animal('Cow')
-zoo.add_animal('Bear')
-zoo.add_animal('Chicken')
-zoo.add_animal('Buffalo')
-zoo.add_animal('Parrot')
-zoo.get_animals()
 # zoo.sell_animal('Cow')
 # zoo.get_animals()
-print(zoo.sort_animals())
-zoo.get_groups()
+print(ramat_gan_safari.sort_animals())
+ramat_gan_safari.get_groups()
