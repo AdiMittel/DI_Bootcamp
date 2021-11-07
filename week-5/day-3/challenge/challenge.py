@@ -65,7 +65,7 @@ print(c2.radius)
 print(c2.diameter)
 print(c1)
 c3 = c1 + c2
-# print('is c3 bigger than c2?', c3 > c2)
+print('is c3 bigger than c2?', c3 > c2)
 print('is c3 equal to than c2?', c3 == c2)
 print([c2, c1,c3])
 print(sorted([c1,c2,c3]))
