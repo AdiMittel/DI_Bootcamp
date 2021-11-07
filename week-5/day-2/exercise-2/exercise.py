@@ -31,7 +31,7 @@ incredible_family = [
     {'name': 'Helen', 'age': 38, 'gender': 'female', 'is_child': False,'power':'flexible','incredible_name':'elastigirl'},
     {'name': 'Violet', 'age': 16, 'gender': 'female', 'is_child': True,'power':'invisible','incredible_name':'ghost girl'},
     {'name': 'Dash', 'age': 13, 'gender': 'male', 'is_child': True,'power':'fast','incredible_name':'Usain bolt'},
-    {'name': 'john jackson', 'age': 2, 'gender': 'male', 'is_child': True,'power':'shape shifting','incredible_name':'jack jack'},
+    # {'name': 'john jackson', 'age': 2, 'gender': 'male', 'is_child': True,'power':'shape shifting','incredible_name':'jack jack'},
     
 ]
 
@@ -50,5 +50,7 @@ class TheIncredibles(Family):
                     print(f'{member["name"]} has no power, he is too young')
 
 
-new_family = TheIncredibles(incredible_family)
 
+
+incredibles = TheIncredibles(name= 'john jackson', age= 2, gender= 'male', is_child= True,power='shape shifting',incredible_name='jack jack')
+# incredible_family.born(name= 'john jackson', age= 2, gender= 'male', is_child= True,power='shape shifting',incredible_name='jack jack')

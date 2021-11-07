@@ -63,8 +63,8 @@ class Dog:
             print(f'{winner} is the winner')
  
 #  The winner should be the dog with the higher run_speed x weight.
-dog1 = Dog('diggo',10,10)
-dog2 = Dog('doggo',6,4)
-dog3 = Dog('spark',5,12)
-dog1.fight(dog2)
-print(dog3.bark())
+# dog1 = Dog('diggo',10,10)
+# dog2 = Dog('doggo',6,4)
+# dog3 = Dog('spark',5,12)
+# dog1.fight(dog2)
+# print(dog3.bark())

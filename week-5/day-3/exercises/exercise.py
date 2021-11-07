@@ -1,3 +1,13 @@
+# # Write a program which prints the results of the following python built-in functions: abs(), int(), input().
+# def print_funcs():
+#     print(abs())
+#     print(int())
+#     print(input())
+# # Using the __doc__ dunder method create your own documentation which explains the execution of your code. Take a look at the doc method on google for help.
+
+# print_funcs()
+
+#----------------------------------------------------
 class Currency:
     def __init__(self,coin,amount):
         self.coin = coin
