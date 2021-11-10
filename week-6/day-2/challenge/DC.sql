@@ -1,0 +1,41 @@
+-- Database: DC-day2
+
+-- DROP DATABASE "DC-day2";
+-- creating table with 2 columns
+-- CREATE TABLE FirstTab (
+--      id integer, 
+--      name VARCHAR(10)
+-- )
+--insert to the table the values:
+-- id  |name
+-- 5   |'Pawan'
+-- 6   |'Sharlee'
+-- 7   |'Krish'
+-- null|'Avtaar'
+-- INSERT INTO FirstTab VALUES
+-- (5,'Pawan'),
+-- (6,'Sharlee'),
+-- (7,'Krish'),
+-- (NULL,'Avtaar')
+
+-- id  |name
+-- 5   |'Pawan'
+-- 6   |'Sharlee'
+-- 7   |'Krish'
+-- null|'Avtaar'
+-- SELECT * FROM FirstTab
+
+--create new table with 1 column
+-- CREATE TABLE SecondTab (
+--     id integer 
+-- )
+-- id
+-- 5
+-- null
+-- INSERT INTO SecondTab VALUES
+-- (5),
+-- (NULL)
+--id
+-- 5
+-- null
+-- SELECT * FROM SecondTab
